@@ -1,4 +1,4 @@
-# aula-frontend
+# Aula-frontend
 My personal website where i apply what i learn:
 <a href="https://k3gontijo.github.io/aula-frontend/">My site</a>
 
