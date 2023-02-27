@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semântico</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .topo {
+            background-color: darkslategray;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .topo h1 {
+            color: white;
+        }
+
+        .topo p {
+            color: white;
+        }
+
+        .menu {
+            background-color: darkcyan;
+            overflow: hidden;
+        }
+
+        .menu a {
+            color: white;
+            padding: 14px 16px;
+            float: left;
+            display: block;
+            text-decoration: none;
+        }
+
+        .coluna-50 {
+            background-color: rgb(53, 66, 66);
+            float: left;
+            width: 50%;
+            padding: 15px;
+        }
+
+        .coluna-50 h2 {
+            color: white;
+        }
+
+        .coluna-50 p {
+            color: white;
+        }
+
+        .rodape {
+            background-color: rgb(36, 64, 58);
+        }
+
+        .rodape a {
+            color: white;
+            padding: 14px 16px;
+            display: block;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--TAG SEMANTICA PARA O TOPO-->
+    <header class="topo">
+        <h1>Topo</h1>
+        <p>Aqui é a parte do topo</p>
+    </header>
+
+    <!--TAG SEMANTICA PARA O MENU-->
+    <nav class="menu">
+        <a href="index.html">Página Principal</a>
+        <a href="index.html">Link</a>
+        <a href="index.html">Link</a>
+        <a href="index.html">Link</a>
+    </nav>
+
+    <!--TAG SEMANTICA PARA SEÇÃO (COLUNAS)-->
+    <section class="coluna-50">
+        <h2>Coluna</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut excepturi non eligendi obcaecati voluptas,
+            quidem porro sunt doloremque numquam dolorem alias iusto accusantium earum dicta similique sequi, molestiae
+            cumque. Suscipit.</p>
+    </section>
+
+    <!--TAG SEMANTICA PARA SEÇÃO (COLUNAS)-->
+    <section class="coluna-50">
+        <h2>Coluna</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, doloribus pariatur tempore incidunt,
+            repellendus, natus nulla et aspernatur esse itaque corrupti similique dolorum unde. Quam blanditiis sit
+            nesciunt maiores quasi.</p>
+    </section>
+
+    <!--TAG SEMANTICA PARA O RODAPE-->
+    <footer class="rodape">
+        <br><br>
+        <a href="equipe/kaue.html">Kauê Gontijo</a>
+    </footer>
+
+</body>
+
+</html>

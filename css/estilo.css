@@ -1,0 +1,104 @@
+* {
+    padding: 1px;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+nav {
+    background-color: rgb(243, 219, 187);
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+hr {
+    height: 3px;
+    border: none;
+    background-color: rgb(49, 49, 49);
+}
+
+.center {
+    text-align: center;
+}
+
+#link_principal {
+    text-decoration: none;
+    color: black;
+}
+
+.ex_background {
+
+    height: 620px;
+    background: black url("../imagens/pexels-johannes-plenio-1103970.jpg") no-repeat left;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+#border_solid {
+    border: 1px rgb(0, 0, 0) solid;
+}
+
+#border_dotted {
+    border: 1px rgb(255, 0, 0) dotted;
+}
+
+#border_dashed {
+    border: 1px rgb(251, 255, 0) dashed;
+}
+
+#border_double {
+    border: 1px rgb(98, 255, 0) double;
+}
+
+#border_groove {
+    border: 1px rgb(0, 255, 229) groove;
+}
+
+#border_ridge {
+    border: 1px rgb(0, 17, 255) ridge;
+}
+
+#border_inset {
+    border: 1px rgb(144, 0, 255) inset;
+}
+
+#border_outset {
+    border: 1px rgb(255, 0, 191) outset;
+}
+
+#border_none {
+    border: 1px black none;
+}
+
+#border_hidden {
+    border: 1px black hidden;
+}
+
+#teste_borda {
+    border-top: 2px rgb(255, 0, 0) dotted;
+    border-left: 2px black solid;
+    border-bottom: 2px blue solid;
+    border-right: 2px green solid;
+}
+
+#borda_redonda {
+    color: white;
+    text-align: center;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: black;
+}
+
+#ex_margin {
+    margin-left: 90px;
+}

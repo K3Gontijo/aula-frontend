@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é o meu primeiro site!">
+    <meta name="keywords" content="programacao,programação,html,css,javascript">
+    <meta name="author" content="Kauê Gontijo">
+    <title>Aqui vai o título da pagína</title>
+</head>
+
+<body>
+    <!--TITULO E EDIÇÃO DE TEXTO-->
+    <h1><img src="imagens/videogame.png">Meu Primeiro Site</h1>
+    <h2>Estou testando os tipos de <i>TAGS</i> para titulo</h2>
+    <p>em um site utilizamos apenas 1 H1 e podendo utilizar outras tag de titulo diversas vezes</p>
+    <p>Aqui estou usando uma tag p para adicionar uma paragrafo novo</p>
+    <p>Podemos utilizar a tag b para deixar palavras em <b>negrito</b></p>
+    <p>Outra forma de deixar uma palavra em negrito, é utilizando a tag <strong>strong</strong>, porém a diferença entre
+        elas é que a tag strong é utilizada para da ênfase a palavra.<br>Fazendo com que o navegador entenda que aquela
+        parte é algo importante para se dar destaque.</p>
+
+    <h3>Editando Paragrafos</h3>
+    <p>Aqui eu vou testar a quebra de paragrafo na mesma linha de codigo utilizando a tag p no meio
+    <p></p>Fugit repudiandae quam molestias nesciunt maiores ipsum necessitatibus consequatur, eum dignissimos vero
+    veritatis dolorem enim culpa quisquam et numquam iusto nihil fugiat.</p>
+
+    <p>Vou adicionar uma linha divisória utilizando a tag hr</p>
+    <hr>
+    <p>Aqui vou testar a quebra de linha utilizando a tag br</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Labore inventore rem, nostrum id esse totam enim
+        magni accusamus expedita fugit non quia nobis natus laborum asperiores possimus. Amet, odit minima?</p>
+    <p>Podemos utilizar mais de uma vez seguida a tag br para pular linha, exemplo:</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br><br><br> Modi possimus animi tempore iusto
+        cupiditate, deleniti autem quidem aperiam eum aliquid magni assumenda eius officiis amet sapiente hic ullam
+        minus saepe.</p>
+    <p>Usamos a tag i para deixar o texto em italico, como usei no titulo.</p>
+    <p>Usamos a tag u para deixar algo em underline ou <u>sublinhado</u>.</p>
+    <p>Usamos a tag small para deixar uma parte do <small>menor</small>. Um exemplo que podemos dar utilizando essa tag:
+    </p>
+    <hr> Kauê Gontijo <br>
+    <small>kauegontijo@gmail.com</small>
+    <hr>
+
+    <p>Usamos a tag del para riscar um texto, exemplo: <br>De <b><del>R$100</del></b> por <b>R$50</b></p>
+    <p>Usamos a tag sup para deixar um texto em exponencial: 10<sup>123abc</sup>
+        <br>Usamos a tag sub para deixar um texto em logaritmico: 10<sub>123abc</sub>
+    </p>
+    <hr>
+
+    <!--LINKS-->
+    <h2>Como Utilizar <i>LINKS</i></h2>
+
+    <!--ISSO É CHAMADO DE LINK ABSOLUTO-->
+    <p>Para utilizar links nós usamos a tag "a".<br><a href="https://www.google.com.br/">Clique aqui para ir para o
+            Google</a></p>
+
+    <p>Dessa forma somos encaminhados direto para o site, para conseguirmos abrir o site em uma nova aba, nós
+        adicionamos o atributo "target="_blank"" depois do link do site.<br><a href="https://www.google.com.br/"
+            target="_blank">Clique aqui para ir para o Google</a></p>
+
+    <!--ISSO É CHAMADO DE LINK RELATIVO-->
+    <p>Aqui nós utilizamos um link referenciando um documento do nosso próprio projeto<br><a href="sobre.html">Sobre
+            nós</a></p>
+
+    <p>Nós podemos referenciar pastas do nosso projeto também da seguinte forma: [nome_da_pasta/nome_do_arquivo]<br><a
+            href="equipe/kaue.html">Kaue</a></p>
+    <hr>
+
+    <!--IMAGENS-->
+    <h2>IMAGENS</h2>
+    <p>Podemos adicionar imagens utilizando a tag img, nela podemos acrescentar arquivos jpg, png, gif.<br>Podemos mudar
+        o tamanho da imagem utilizando o atributo width.</p>
+    <img src="imagens/mario.jpg"
+        alt="foto de brinquedos do mário, na esquerda o luigi, no meio o yoshi e na direita o mário">
+    <img src="imagens/neymar.png" width="150" alt="Jogador neymar">
+    <img src="imagens/nyan-cat-1.gif" width="150" alt="gif de um gato vomitando arco-iris">
+    <br>
+    <p>Podemos fazer interações com as imagens, utilizando image map (passando o mouse por cima do mario e do luigi)</p>
+    <img src="imagens/mario.jpg" usemap="#image-map">
+    <map name="image-map">
+        <area target="_blank" alt="luigi" title="luigi" href="https://www.facebook.com/" coords="56,151,107,12"
+            shape="rect">
+        <area target="_blank" alt="mario" title="mario" href="https://www.google.com.br/"
+            coords="206,61,213,151,258,145,251,46,243,31,215,37" shape="poly">
+    </map>
+
+    <br><br>
+    <hr>
+
+    <!--TABELAS-->
+    <h2>Tabelas</h2>
+    <p>Para criarmos uma tabela, utilizamos a tag table.<br>Essa tag tem um padrão para tabalhar com ela, da mesma forma
+        que fazemos uma tabela no papel com linhas e colunas, no HTML nós fazemos da mesma forma. <br>Colocamos a tag tr
+        para
+        indicarmos que aquilo é uma linha. Na primeira linha colocamos os titulos das colunas. (Para colocarmos os
+        conteúdos nas colunas, criamos outras linhas em baixoda primeira tag tr)<br>Para indicarmos essa coluna usamos a
+        tag th (só utilizamos a tag th na primeira linha)</p>
+    <p>Podemos editar a aparência da tabela com atributos da tag table como por exemplo o atributo width que muda o
+        tamanho da tabela.<br>Podemos adicionar bordas na tabela com o atributo border</p>
+
+    <table width="12%" border="1">
+        <!--tr para criar a linha e th para colocar os titulos-->
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Peso</th>
+        </tr>
+        <!--tr para criar a linha e td(table data) para colocar o dado daquela linha -->
+        <tr>
+            <td>Kauê</td>
+            <td>18</td>
+            <td>60kg</td>
+        </tr>
+        <tr>
+            <td>Alguem</td>
+            <td>18</td>
+            <td>55kg</td>
+        </tr>
+    </table>
+
+    <hr>
+    <!--LISTAS-->
+    <h2>Listas</h2>
+    <h3>Listas Não Ordenadas</h3>
+    <p>Para criarmos uma lista não ordenada nós usamos a tag ul(unordered list)<br>Dentro dessas tag nós usamos tags
+        filhas li(list item)</p>
+
+    <ul>
+        <li>eu</li>
+        <li>não</li>
+        <li>sei</li>
+        <li>o que</li>
+        <li>estou</li>
+        <li>fazendo</li>
+        <li>aqui</li>
+    </ul>
+
+    <h3>Listas Ordenadas</h3>
+    <p>Para listas ordenadas nós utilizamos a tag ol(ordened list)<br>Dentro dessas tag nós usamos tags filhas li(list
+        item).<br>Nesse tipo de lista, ela vai ficar uma lista numerada com as ordens</p>
+    <ol>
+        <li>tempero</li>
+        <li>batata</li>
+        <li>mandioca</li>
+        <li>beterraba</li>
+        <li>amendoin</li>
+        <li>salgado</li>
+        <li>arroz</li>
+    </ol>
+
+    <hr>
+    <!--IFRAMES-->
+    <h2>IFrame</h2>
+    <p>Os iframes é uma maneira de mostrar um página web, dentro de uma página html. Ex: Um sonho dentro de um
+        sonho.<br>Utilizando a tag iframe, nele podemos adicionar um documento(imagem, site, video, gif, arquivo...) com
+        a tag src, definir um tamanho com width e height e um titulo com title.
+    <p>Aqui utilizei a ferramenta de
+        encorporar (na opção de compartilhar vídeo) no vídeo do youtube fazendo assim que eu consiga pegar o iframe
+        diretamente.</p>
+
+    <iframe width="275" src="https://www.youtube.com/embed/448sdzWsnMs" title="YouTube video player" frameborder="5"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <br>
+    <a href="sobre.html" target="meu-iframe">Sobre nós</a>
+    <br>
+    <hr>
+
+    <!--FORMULARIOS-->
+    <h2>Formulário</h2>
+    <p>Também são conhecidos como dados de entrada, como por exemplo em áreas de login. Geralmente essa área está ligada
+        com a aparte do backend (com o DB) </p>
+    <a href="formulario.html">Formulário</a>
+    <hr>
+
+    <!--AUDIOS-->
+    <h2>Áudios</h2>
+    <p>Podemos utilizar áudios em nossas páginas, são bem comuns e simples de se usarem</p>
+    <a href="audio.html">Página de áudio</a>
+    <hr>
+
+    <!--VIDEOS-->
+    <h2>Vídeos</h2>
+    <p>Os vídeos funcionam basicamente da mesma forma que os áudios</p>
+    <a href="video.html">Página de Vídeo</a>
+    <hr>
+
+    <!--DIV E HTML SEMANTICO-->
+    <h2>Div e HTML Semântico</h2>
+    <h3>Div</h3>
+    <p>As div's e o html semântico são um ponto fundamental para o progresso do programação web.<br><br>As div's, como o
+        próprio nome diz servem para criar divisórias em uma página, dividindo-as em blocos: <br>(o mais comum é uma página
+        ter um bloco 1.topo/2.menu de pesquisa/3.conteúdo/ 4.conteúdo).<br><br> Para fazer isso, usamos a tag "div" e dentro
+        dela colocamos o conteúdo que queremos, a tag div é uma tag neutra.</p>
+
+    <h3>HTML Semântico</h3>
+    <p>Ele nasceu pra ter um significado, tanto pro navegador quanto pros programadores, de conseguirmos entender o contexto do site. <br>Por exemplo, quando temos uma "div" para determinarmos que ela é o topo, utilizamos uma tag semantica no lugar da "div" nesse exemplo do topo usamos a tag "header".<br><br><b><u>Caso queira ver outros elementos semanticos:</b></u> <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">Clique aqui</a></p>
+    
+    <a href="semantico.html">Div e HTML Semântico</a>
+    <hr><br>
+
+    <a href="index.html">Voltar para principal</a>
+
+    <h2>Tag de Titulo H2</h2>
+    <h3>Tag de Titulo H3</h3>
+    <h4>Tag de Titulo H4</h4>
+    <h5>Tag de Titulo H5</h5>
+    <h6>Tag de Titulo H6</h6>
+
+</body>
+
+</html>

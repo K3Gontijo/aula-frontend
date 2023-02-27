@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+
+    <p>Todo formulário começa com a tag pai "form", dentro dessa tag existem vários itens que vão formar esses
+        formulários, o primeiro que veremos é o "input".<br>Nesse atributo input existem vários tipos, que seria o
+        atributo type. Nele existem os tipos (text, password(senha), email </p>
+    <form>
+        <input type="text">
+    </form><br>
+
+    <hr>
+
+    <h2>Placeholder</h2>
+    <p>Temos uma outra propriedade que podemos colcar que é o placeholder. Essa função vai colocar um texto dentro da
+        caixa de entrada, é usada para indicar o que o usuário deverá colocar ali</p>
+    <form>
+        <input type="text" placeholder="Digite seu nome aqui">
+    </form><br>
+
+    <hr>
+
+    <h2>Label</h2>
+    <p>Também temos o atributo "label" que é utilizado como legenda para o input (caixa de entrada).<br>Podemos colocar
+        uma função de caso o usuário clique em cima da tag label, ela vá direto para a caixa de texto utilizando. Para
+        isso nós devemos acrescentar uma id na tag input e colocamos a o atributo "for" dentro da tag de abertura label.
+    </p>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" placeholder="Digite seu nome aqui" id="nome">
+    </form><br>
+
+    <hr>
+
+    <h2>Type Password</h2>
+    <p>Mudando o tipo do atributo type para password, faz com que o que for digitado dentro do campo fique censurado</p>
+    <form>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Digite sua senha aqui">
+    </form><br>
+
+    <hr>
+
+    <h2>Type Email</h2>
+    <p>Outro tipo que nós utilizamos no atributo type, é o tipo Email. Com essa característica do tipo email, ele
+        reconhece se o que o usuário digitou no campo é um email ou não.</p>
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Digite um email">
+    </form><br>
+
+    <hr>
+
+    <h2>Type Submit</h2>
+    <p>Um tipo que utilizamos também é o tipo submit(enviar). Esse tipo faz que seja criado um botão para que seja
+        confirmado o envio de todo aquele formulário.<br>Para esse tipo, nós precisamos acrescentar o atributo "value"
+        para dizer qual o texto dentro da caixa.
+    </p>
+    <form>
+        <label for="email_2">Email:</label>
+        <input type="email" id="email_2" placeholder="Digite um email"><br><br>
+
+        <label for="senha_2">Senha:</label>
+        <input type="password" id="senha_2" placeholder="Digite a senha"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <hr>
+
+    <h2>Atributos para tag Form</h2>
+    <p>Nós colocamos alguns atributos para indicar para onde esse formulário vai ir assim que for utilizado o botão
+        submit.<br></p>
+
+    <h3>Action</h3>
+    <p>Temos o atributo "action" que vai indicar para onde que vai aquela informção, normalmente é um arquivo do tipo
+        php</p>
+
+    <form action="arquivo.php">
+        <label for="email_2">Email:</label>
+        <input type="email" id="email_2" placeholder="Digite um email"><br><br>
+
+        <label for="senha_2">Senha:</label>
+        <input type="password" id="senha_2" placeholder="Digite a senha"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <hr>
+    <!--CAMPOS REQUIRED-->
+    <h2>Required</h2>
+    <p>Nós podemos adicionar atributos nos campos de inserir dados, para que aquele campo seja obrigatoriamente inserido
+        para que seja enviado.<br>Para isso nós utilizamos o atributo "required" dentro da tag "input".</p>
+
+    <form action="arquivo.php">
+        <label for="email_required">Email:</label>
+        <input type="email" id="email_required" placeholder="Digite um email" required><br><br>
+
+        <label for="senha_required">Senha:</label>
+        <input type="password" id="senha_required" placeholder="Digite a senha" required><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <hr>
+    <!--RADIO-->
+    <h2>Type Radio</h2>
+    <p>O tipo "radio" é o tipo de entrada questões de alternativas, onde só podemos selecionar uma opção.<br>Para esse
+        tipo nós precisamos adicionar um atributo "name" para identificarmos aquele grupo, ela deve ser utilizada para
+        todas as opções que tiver naquele grupo e um atributo "valeu" para cada um dos itens para que possamos adicionar
+        um valor para aquela opção<br>(esse valor não vai aparecer para nós, mas ele vai estar no formulario quando
+        enviarmos).</p>
+
+    <h3>Animais de Estimação</h3>
+    <form action="">
+        <input type="radio" name="animal" id="dog" value="Cachorro">
+        <label for="dog">Cachorro</label>
+        <br><br>
+        <input type="radio" name="animal" id="cat" value="Gato">
+        <label for="cat">Gato</label>
+        <br><br>
+        <input type="radio" name="animal" id="bird" value="Passaro">
+        <label for="bird">Passaro</label>
+        <br><br>
+        <input type="submit" value="Enviar Resposta">
+    </form>
+
+    <hr>
+    <!--CHECKBOX-->
+    <h2>Type Checkbox</h2>
+    <p>O tipo "Checkbox" tem a mesma função que o tipo "Radio", a diferença é que no "Checkbox" nós temos a função de
+        múltipla escolha.<br>Diferente do tipo "radio", aqui nóa temos que adicionar um atributo "name" para identificar
+        cada elemento, ela deve ser usada apenas para ela e também um atributo "value" para cada um dos itens para que
+        possamos adicionar uma valor para aquela opção. <br>(esse valor não vai aparecer para nós, mas ele vai estar no
+        formulario quando
+        enviarmos).</p>
+
+    <h3>Itens de Casa</h3>
+    <form action="">
+        <input type="checkbox" id="item1" name="item1" value="TV">
+        <label for="item1">TV</label><br><br>
+
+        <input type="checkbox" id="item2" name="item2" value="Celular">
+        <label for="item2">Celular</label><br><br>
+
+        <input type="checkbox" id="item3" name="item3" value="Computador">
+        <label for="item3">Computador</label><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <hr>
+
+    <!--CAMPO SELECT-->
+    <h2>Campo Select</h2>
+    <p>O campo select tem a função de dar ao usuário várias opções dentro de uma caixa para que o mesmo selecione. Como
+        por exemplo: Forma de pagamento.<br>Nessa opção nós começamos com a tag "select" e dentro dela adicionamos uma
+        subclasse "option", que como o próprio nome diz, vai ser as opções dentro da caixa de seleção. Para cada opção
+        nós devemos colocar um atributo "value" que vai ser o dado que ela vai amarzenar e entre a abertura e o
+        fechamento colocamos qual vai ser o nome daquela opção.</p>
+
+    <label for="formas_pagamento">Selecione uma forma de pagamento:</label><br>
+    <select name="formas_pagamento" id="formas_pagamento">
+        <option value="Pix">Pix</option>
+        <option value="credito">Crédito</option>
+        <option value="debito">Débito</option>
+    </select>
+    <input type="submit" value="Selecionar" for="formas_pagamento">
+    <br>
+
+    <p>nós podemos colocar uma opçãos como se fosse um placeholder, apenas adicionando um novo "option" com o "value"
+        nulo e com os atributos "selected" e "disabled"</p>
+    <select name="cor" id="cores">
+        <option selected disabled value="">Selecione uma cor</option>
+        <option value="red">Vermelho</option>
+        <option value="blue">Azul</option>
+        <option value="yellow">Amarelo</option>
+    </select>
+    <input type="submit" value="Selecionar" for="cor">
+    <hr>
+
+    <!--CAMPO TEXTAREA-->
+    <h2>Campo Textarea</h2>
+    <p>Aqui nós colocamos uma caixa de texto, onde o usuário pode escrever algo. Para isso nós usamos a tag
+        "textarea".<br>Nós podemos adicionar algumas propriedades nesse campo, como o "rows" que significa o número de
+        linhas que vai ter essa caixa e o "cols" que significa as colunas ou a espessura da caixa.<br>Entre a abertura e
+        o fechamento da tag.</p>
+
+    <textarea name="" id="" rows="5" cols="15">Digite algo</textarea>
+    <br>
+    <p>Nós podemos digitar algo para que fique escrito algo dentro dessa caixa, podemos utilizar o
+        "placeholder" para que fique algo dentro da caixa mas que não afete ela.</p>
+    <textarea name="" id="" cols="15" rows="5" placeholder="Digite algo"></textarea>
+    <hr>
+
+    <!--TAG BUTTON-->
+    <h2>Tag Button</h2>
+    <p>A tag button serve para criar um botão parecido com o botão do "input" do tipo "submit", a diferença é que esse
+        vai ser um botão mais genérico</p>
+
+    <button>Clique Aqui</button>
+    <HR>
+    </HR>
+
+    <!--TODOS OS TIPOS DE INPUT-->
+    <H2>Input Types</H2>
+    <p>No total são 21 (vou colocar os mesmos que já foram citados a cima)</p>
+    <input type="text"> Input padrão. Define um campo de texto de linha única-->
+    <br><br>
+    <input type="number"> Define um campo para selecionar um número inteiro-->
+    <br><br>
+    <input type="password"> Define um campo para senha-->
+    <br><br>
+    <input type="radio"> Define um botão de opção para seleção única-->
+    <br><br>
+    <input type="checkbox"> Define uma caixa de seleção para seleção de várias opções-->
+    <br><br>
+    <input type="button"> Define um botão clicável (usado principalmente com um JavaScript para ativar um script)-->
+    <br><br>
+    <input type="color"> Define um seletor de cores em hexadecimal-->
+    <br><br>
+    <input type="email"> Define um campo para entrar com endereço de e-mail-->
+    <br><br>
+    <input type="file">
+    Define um campo para selecionar um arquivo e um botão "Procurar" (para uploads de arquivo)-->
+    <br><br>
+    <input type="hidden"> Define um campo oculto-->
+    <br><br>
+    <input type="image"> Define uma imagem como o botão de envio-->
+    <br><br>
+    <input type="range"> Define um controle de intervalo (como um controle deslizante)-->
+    <br><br>
+    <input type="search"> Define um campo de texto para inserir uma string de pesquisa-->
+    <br><br>
+    <input type="tel"> Define um campo para inserir um número de telefone-->
+    <br><br>
+    <input type="time"> Define um controle para inserir um horário (sem fuso horário)-->
+    <br><br>
+    <input type="date"> Define um controle para selecionar data (ano, mês, dia (sem hora))-->
+    <br><br>
+    <input type="week"> Define um controle para selecionar semana e ano (sem fuso horário)-->
+    <br><br>
+    <input type="month"> Define um controle para selecionar mês e ano (sem fuso horário)-->
+    <br><br>
+    <input type="url"> Define um campo para inserir uma URL-->
+    <br><br>
+    <input type="submit"> Define um botão para enviar os dados do formulário-->
+    <br><br>
+    <input type="reset"> Define um botão para reinicar o preenchimento do formulário-->
+
+    <hr><br>
+    <a href="index.html">Voltar para a principal</a>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+
+<body>
+    <h1>Página de Áudios</h1>
+    <p>Para utilizarmos áudios em nossos sites, usamos a tag "audio" e dentro dela a subtag "source" dentro dessa tag
+        "source" devemos adicionar um atributo "src" para dizermos qual vai ser o áudio e outro atributo para dizer qual
+        o tipo dele (para audios do tipo mp3 que são os mais comuns de ser usados, é utilizado <b>audio/mpeg</b>.
+        <br>Ainda assim a faixa de áudio não vai estar visivel no site. Para isso, colocamos o atributo "controls"
+        dentro da tag "audio"
+    </p>
+
+    <audio controls>
+        <source src="audio/passion_fruit_punch-rick_dickert_CLIP.mp3" type="audio/mpeg">
+    </audio>
+    <br><br>
+
+    <p>Caso queira remover a opção de baixar o áudio. É simples, só precisamos adicionar a tag "constrolsList" e
+        atribuir "nodownload" a ela</p>
+    <audio controls controlsList="nodownload">
+        <source src="audio/passion_fruit_punch-rick_dickert_CLIP.mp3" type="audio/mpeg">
+    </audio>
+
+    <p>Podemos também utilizar links de áudios web, apenas copiando o endereço dele</p>
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <hr>
+    <a href="index.html">Página principal</a>
+</body>
+
+</html>

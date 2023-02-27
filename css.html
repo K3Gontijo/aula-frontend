@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo CSS</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+
+    <header class="center">
+        <h1>CSS (Cascading Style Sheets)</h1>
+    </header>
+
+    <nav class="center">
+        <a id="link_principal" href="index.html">Principal</a>
+    </nav>
+
+    <h2>O que é?</h2>
+    <p>CSS é uma sigla para "Cascading Style Sheets" (Folha de Estilo em Cascata), o CSS é a dupla dinâmica do HTML.
+        Enquanto o HTML cuida da parte do conteúdo, o CSS cuida do comportamento estético dos elementos da sua página.
+    </p>
+
+    <h2>CSS Inline</h2>
+    <p>Quando trabalhamos com css inline, quando colocamos os comandos nos próprios elementos, ou seja, quando colocamos
+        uma propriedade "style" dentro de uma tag. Ela só vai funcionar para dentro daquela tag HTML. <br><br> Outra
+        propriedade que podemos usar, é o "font-size" para mudar o tamanho da fonte. </p>
+
+    <h2>CSS Externo</h2>
+    <p>Podemos trabalhar com o css externo também, como ele funciona? Nós criamos uma nova pasta "css" e dentro dela
+        criamos um novo arquivo.css com todas as especificações que queremos para nosso site.<br>Para encorporarmos esse
+        arquivo na nossa página, dentro da tag "head" nós adicionamos mais uma tag "link" e referênciando o local do
+        arquivo.<br><br>Dessa forma conseguimos organizar nossa página, contendo um arquivo que pode ser usados diversas
+        vezes para outras páginas. Podemos separar ainda mais eles, podendo fazer um arquivo para estilo só dos títulos,
+        outro só para os textos...</p>
+
+    <h2>Prioridades do CSS</h2>
+    <p>Dentro do CSS temos uma hierarquia para que seja aplicado o estilo, sendo ela: inline(direto na tag) > interno(no
+        head do arquivo) > externo(de um outro arquivo)</p>
+    <hr>
+
+    <h2>Seletores</h2>
+    <h3>O que é?</h3>
+    <p>Um "seletor" é a maneira de dizer para o CSS qual é o elemento HTML que queremos trabalhar, ou seja, como o CSS
+        vai encontrar ou selecionar o elemento HTML que queremos estilizar.</p>
+    <p>A primeira forma de fazermos isso é indo direto no arquivo CSS e colocando qual tag queremos trabalhar. Outra
+        forma que é bem utilizada, é referênciando uma class e por essa classe dizermos em qual queremos estilizar (no
+        caso toda tag que darmos essa mesma classe, vai ser estilizada também), para sitar ela no nosso arquivo CSS,
+        basta colocar um "." antes do nome dela (.nome_classe)</p>
+    <p>Se quisermos sitar uma tag que possui um <b>ID</b> conseguimos referenciar ela no nosso arquivo CSS usar "#" e em
+        seguida o nome dela (#id_tag)</p>
+
+    <p>Caso queira aplicar um estilo para todos os itens da página, usa-se um coriga, no topo do arquivo CSS, usamos o
+        "*{}" dessa forma ele vai aplicar aquele estilo em todo site.</p>
+
+    <p>Para economizarmos código, caso 2 ou mais elementos tenham a mesma propriedade podemos colocar dessa forma por
+        exemplo (h1, p{color: white})</p>
+    <hr>
+
+    <h2>Propriedades</h2>
+    <h3>Color</h3>
+    <p>A propriedade "Color" serve para colorirmos um texto. <br>Um computador não consegue compreender o que é cada
+        cor, para isso é utilizado códigos para definir cada tom. Podemos ver isso pesquisando no Google por "<a
+            href="https://g.co/kgs/1FNWxw" style="text-decoration: none;">Color Picker</a>".</p>
+
+    <div class="ex_background">
+        <h3>Background</h3>
+        <p>Nós podemos usar ela tanto pra definir uma cor de fundo ou uma imagem. <br>No caso de imagens, nós devemos
+            usar a
+            propriedade "background-image: url("")" e adicionarmos um link relativo ou absoluto dentro dele.</p>
+
+        <h4>Background-Size</h4>
+        <p>Dentro do "Background" nós temos a opção de escolher o tamanho dele (background-size), tendo duas opções
+            (contain
+            e cover)
+        <ul>
+            <li><b>Contain:</b> Ele vai repetir a imagem caso ela não seja proporcional a tela.</li>
+            <li><b>Cover:</b> Ele vai ajustar a imagem dentro o espaço (dando zoom por exemplo).</li>
+        </ul>
+        </p>
+
+        <h4>Background-repeat</h4>
+        <p>Com essa função podemos ativar/desativar a opção de repetir a imagem caso ela não preencha o espaço todo.<br>
+            Caso não queiramos que repita, usamos a opção "background-repeat: no-repeat". Dessa forma ele vai preencher
+            o restante com a cor de fundo. <br>Dentro dela também podemos selecionar qual direção queremos repetir,
+            sendo ela:
+        <ul>
+            <li><b>background-repeat: repeat-x</b> (para repetir a imagem na horizontal)</li>
+            <li><b>background-repeat: repeat-y</b> (para repetir a imagem na vertical)</li>
+        </ul>
+        </p>
+
+        <h4>Background-position</h4>
+        <p>Com ela podemos determinar qual posição da imagem quer que seja mostrada, para isso usamos
+            "background-position:(posição)" </p>
+
+        <p>Podemos fazer tudo isso usando apenas 1 linha. Dessa forma: <b>background: (cor)<small>red </small>
+                (url)<small>.../imagens/ </small> (repeat)<small>no-repeat </small> (posição)<small>center </small></b>
+            <br><br>
+            Única coisa que colocariamos depois é o "background-size"
+        </p>
+    </div>
+
+    <br>
+
+    <div class="border">
+        <h3>Border</h3>
+        <p>Como o próprio nome já diz, é uma borda que vamos usar. Para isso, usamos a propriedade "border". <br><br>
+            Nela podemos especificar algumas coisa: tamanho(em pixel), estilo(ex: solid), cor(black).
+        </p>
+
+        <p>Temos uma variedade de tipos de bordas, sendo elas:
+        <ul>
+            <li id="border_solid"><b>Solid:</b> é a mais comum</li>
+            <li id="border_dotted"><b>Dotted:</b> é uma linha pontilhada</li>
+            <li id="border_dashed"><b>Dashed:</b> é uma linha com tracinhos</li>
+            <li id="border_double"><b>Double:</b> fica com duas bordas</li>
+            <li id="border_groove"><b>Groove:</b> fica um efeito 3D</li>
+            <li id="border_ridge"><b>Ridge:</b> (ele não explica)</li>
+            <li id="border_inset"><b>Inset:</b> por dentro</li>
+            <li id="border_outset"><b>Outset:</b> por fora</li>
+            <li id="border_none"><b>None:</b> nenhuma</li>
+            <li id="border_hidden"><b>Hidden:</b> oculta</li>
+        </ul>
+
+        Nós podemos definir onde queremos que fique a borda, usando "border_(direção: left...)". Também conseguimos
+        colocar várias bordas em um lugar só, dando diferentes propriedades.
+        <h4 id="teste_borda">Teste de Borda</h4>
+
+        Podemos colocar bordas arredondadas também com "border-radius"
+        <h4 id="borda_redonda">Borda Redonda</h4>
+
+        </p>
+    </div>
+
+    <br>
+
+    <div class="margin">
+        <h3>Margin</h3>
+        <p>A "margin" ou margem serve para dar um espaço em branco em umas das direções do elemento, em relação a parte
+            de cima, da esquerda, de baixo ou da direita. Para isso usamos o atributo "margin-(direção): (valor em
+            pixel/porcentagem)". <br><br>Para referênciar qual direção queremos, usamos as seguintes:
+            top(cima) / bottom(baixo) / left(esquerda) / right(direita) </p>
+
+        <p>Também podemos usar em um "atalho" (chamamos isso de shortrange, quando fazemos tudo isso em apenas uma
+            declaração). <br>Para isso usamos apenas o atributo "margin" da seguinte forma e ordem (margin:
+            (top)->(right)->(bottom)->(left)</p>
+
+        <h4>Exemplo:</h4>
+        <p>
+        <ul id="ex_margin">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+        </ul>
+        </p>
+
+    </div>
+    <!--TUDO QUE FOI FALADO AQUI ESTÁ NO ARQUIVO CSS-->
+</body>
+
+</html>

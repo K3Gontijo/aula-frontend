@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+
+<body>
+    <h1>Tags de Vídeo</h1>
+    <p>Para utilizarmos vídeos no nosso site, funciona básicamente da mesma forma que os áudios. Para acrescentarmos um
+        novo, usamos a tag "video" e dentro dela colocamos uma subtag "source" com atributos "src"(podemos colocar o
+        caminho direito do nosso pc e/ou algum link) e "type"(para referenciar qual formato de vídeo está sendo usado)
+    </p>
+
+    <p>Automaticamente ele vai preencher toda a tela, para mudarmos isso podemos adicionar o atributo "width" na tag
+        "video" para ajustarmos o tamanho dele. <br>Também precisamos adicionar os controles nele, só adicionarmos o
+        atributo "controls" </p>
+
+    <p>Podemos remover a opção de download, fullscreen e picture-in-picture com os atributos "controlsList='nodownload'"
+        (para remover a tela cheia, só adicionarmos "nofullscreen") e para removermos o picture-in-picture só colocarmos
+        o atributo "disablepictureinpicture" </p>
+
+    <video width="500" controls>
+        <source src="video/2022-11-21 09-36-28.mp4" type="video/mp4">
+    </video>
+
+    <p>Podemos adicionar um atributo uma thumbnail, para que tenha uma imagem de capa do vídeo, esse atributo é o
+        "poster". Com ele podemos adicionar um endereço de uma imagem para que seja carregada</p>
+
+    <video width="500" controls poster="imagens/mario.jpg">
+        <source src="video/2022-11-21 09-36-28.mp4" type="video/mp4">
+    </video>
+
+    <p>Outra coisa que podemos adicionarm também, é fazer com que o vídeo seja carregado assim que a pessoa acesse a
+        página. Só basta adicionarmos o atributo "autoplay". Em alguns navegadores essa função é bloqueada</p>
+
+    <video width="500" controls poster="imagens/mario.jpg" autoplay controlsList="nodownload nofullscreen"
+        disablepictureinpicture>
+        <source src="video/2022-11-21 09-36-28.mp4" type="video/mp4">
+    </video>
+
+    <br><br><br>
+    <a href="index.html">Voltar para principal</a>
+</body>
+
+</html>
