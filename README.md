@@ -1,11 +1,15 @@
 # aula-frontend
-My personal website where i apply what i learn
+My personal website where i apply what i learn:
+<a href="https://k3gontijo.github.io/aula-frontend/">My site</a>
+
 ![header](https://user-images.githubusercontent.com/105028392/221698365-a1535dc1-c3eb-4bea-b18b-3156dcd034a2.jpg)
 
 For now, i have just two themes (CSS e HTML).
 
 Inside of them we have some things about each themes, how we use and how they work...
 
-HTML: (https://user-images.githubusercontent.com/105028392/221700520-8ef328c8-4566-4c19-ac7a-d4524d72f6ec.jpg)
+HTML:
+![header-html](https://user-images.githubusercontent.com/105028392/221706452-195e73c8-f86c-47df-a86e-b1f987c30dfe.jpg)
 
-CSS:  (https://user-images.githubusercontent.com/105028392/221700530-bde38460-4e35-499d-af86-e6cb0ddc222a.jpg)
+CSS:
+![header-css](https://user-images.githubusercontent.com/105028392/221706784-5c864ab5-b661-40c6-9293-8ca0cae292a7.jpg)
