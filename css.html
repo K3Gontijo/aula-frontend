@@ -43,6 +43,7 @@
         head do arquivo) > externo(de um outro arquivo)</p>
     <hr>
 
+    <!--SELETORES   -->
     <h2>Seletores</h2>
     <h3>O que é?</h3>
     <p>Um "seletor" é a maneira de dizer para o CSS qual é o elemento HTML que queremos trabalhar, ou seja, como o CSS
@@ -61,12 +62,14 @@
         exemplo (h1, p{color: white})</p>
     <hr>
 
+    <!--PROPRIEDADES-->
     <h2>Propriedades</h2>
     <h3>Color</h3>
     <p>A propriedade "Color" serve para colorirmos um texto. <br>Um computador não consegue compreender o que é cada
         cor, para isso é utilizado códigos para definir cada tom. Podemos ver isso pesquisando no Google por "<a
             href="https://g.co/kgs/1FNWxw" style="text-decoration: none;">Color Picker</a>".</p>
 
+    <!--PROPRIEDADES-->
     <div class="ex_background">
         <h3>Background</h3>
         <p>Nós podemos usar ela tanto pra definir uma cor de fundo ou uma imagem. <br>No caso de imagens, nós devemos
@@ -107,6 +110,7 @@
 
     <br>
 
+    <!--BORDER-->
     <div class="border">
         <h3>Border</h3>
         <p>Como o próprio nome já diz, é uma borda que vamos usar. Para isso, usamos a propriedade "border". <br><br>
@@ -114,7 +118,7 @@
         </p>
 
         <p>Temos uma variedade de tipos de bordas, sendo elas:
-        <ul>
+        <ul id="border_types">
             <li id="border_solid"><b>Solid:</b> é a mais comum</li>
             <li id="border_dotted"><b>Dotted:</b> é uma linha pontilhada</li>
             <li id="border_dashed"><b>Dashed:</b> é uma linha com tracinhos</li>
@@ -139,6 +143,7 @@
 
     <br>
 
+    <!--MARGIN-->
     <div class="margin">
         <h3>Margin</h3>
         <p>A "margin" ou margem serve para dar um espaço em branco em umas das direções do elemento, em relação a parte
@@ -161,8 +166,28 @@
             <li>6</li>
         </ul>
         </p>
-
     </div>
+
+    <br>
+
+    <!--PADDING-->
+    <div class="padding">
+        <h3>Padding</h3>
+        <p>O "Padding" é bem parecido com o "Margin", com a diferença que ele vai mexer com o espaçamento de dentro de
+            uma div. <br><br> A sintaxe dele funciona da mesma forma que o "Margin". Podemos atribuir separadamente um
+            valor para cada direção ou podemos atribuir tudo em uma declaração só, seguindo aquelas regras: <b>(padding:
+                (top)px -> (right)px -> (bottom)px -> (left)px</b>. <br>Caso queiramos que um valor seja o padrão para
+            todos os lados, colocamos somente um valor dentro da tag.</p>
+
+        <h4 id="h4_padding">Exemplo</h4>
+
+        <p>Isso é bem utilizado para fazer botões. EX:</p>
+        <a class="botao" href="index.html">Voltar para Principal</a>
+        <br><br><br>    
+
+        <p>Aproveitando o assunto de botão, podemos adicionar um efeito quando colocamos o mouse em cima dele. Para isso usamos a propriedade "hover" da seguinte forma (.classe/id:hover{o efeito que quer}</p>
+    </div>
+
     <!--TUDO QUE FOI FALADO AQUI ESTÁ NO ARQUIVO CSS-->
 </body>
 

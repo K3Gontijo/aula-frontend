@@ -40,7 +40,9 @@ hr {
     background: black url("../imagens/pexels-johannes-plenio-1103970.jpg") no-repeat left;
 }
 
-.border {
+.border,
+.margin,
+.padding {
     border: 1px solid black;
 }
 
@@ -100,5 +102,31 @@ hr {
 }
 
 #ex_margin {
-    margin-left: 90px;
+    margin: 10px 15px 50px 80px;
+
+}
+
+#border_types {
+    margin: 20px;
+}
+
+#h4_padding{
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    padding:20px 20px 30px 90px;
+}
+
+.botao{
+    margin: 15%;
+    color: white;
+    padding: 10px;
+    background-color: rgb(168, 119, 126);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.botao:hover{
+    background-color: rgb(153, 84, 94);
+    padding: 11px;
 }
