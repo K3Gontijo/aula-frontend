@@ -2,7 +2,7 @@
 My personal website where i apply what i learn, click here:
 <a href="https://k3gontijo.github.io/aula-frontend/">My site</a>
 
-![header](https://user-images.githubusercontent.com/105028392/221698365-a1535dc1-c3eb-4bea-b18b-3156dcd034a2.jpg)
+![HOME](https://user-images.githubusercontent.com/105028392/222925345-216d2d8f-37c4-45ad-a9c1-d9aa46286620.png)
 
 For now, i have just two themes (CSS e HTML).
 
@@ -12,4 +12,4 @@ HTML:
 ![header-html](https://user-images.githubusercontent.com/105028392/221706452-195e73c8-f86c-47df-a86e-b1f987c30dfe.jpg)
 
 CSS:
-![header-css](https://user-images.githubusercontent.com/105028392/221706784-5c864ab5-b661-40c6-9293-8ca0cae292a7.jpg)
+![HOME-CSS](https://user-images.githubusercontent.com/105028392/222925395-ab1efd02-df16-400a-8c9b-22b7ae6168df.png)
