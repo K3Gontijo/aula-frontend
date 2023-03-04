@@ -13,6 +13,9 @@ h1 {
 nav {
     background-color: rgb(243, 219, 187);
     font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    text-transform: lowercase;
 }
 
 h2 {
@@ -25,13 +28,9 @@ hr {
     background-color: rgb(49, 49, 49);
 }
 
-.center {
+.center,
+.topo {
     text-align: center;
-}
-
-#link_principal {
-    text-decoration: none;
-    color: black;
 }
 
 .ex_background {
@@ -42,7 +41,9 @@ hr {
 
 .border,
 .margin,
-.padding {
+.padding,
+.width_height,
+.text {
     border: 1px solid black;
 }
 
@@ -106,27 +107,39 @@ hr {
 
 }
 
-#border_types {
+.borda_lista {
     margin: 20px;
 }
 
-#h4_padding{
+#h4_padding {
     color: white;
     background-color: black;
     border-radius: 50px;
-    padding:20px 20px 30px 90px;
+    padding: 20px 20px 30px 90px;
 }
 
-.botao{
-    margin: 15%;
+.botao {
+    text-align: center;
     color: white;
     padding: 10px;
-    background-color: rgb(168, 119, 126);
+    background-color: rgb(161, 145, 123);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 60px;
 }
 
-.botao:hover{
-    background-color: rgb(153, 84, 94);
+.botao:hover {
+    background-color: rgb(126, 113, 95);
     padding: 11px;
+}
+
+.altura_largura {
+    background-color: rgb(156, 139, 115);
+    width: 300px;
+    height: 150px;
+}
+
+.altura_largura2 {
+    background-color: rgb(155, 139, 116);
+    max-width: 1500px;
+    height: 150px;
 }
