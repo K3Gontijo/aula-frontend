@@ -1,6 +1,6 @@
 # Aula-frontend
 My personal website where i apply what i learn, click here:
-<a href="https://k3gontijo.github.io/aula-frontend/">My site</a>
+<a href="https://k3gontijo.github.io/aula-frontend/" target="_blank">My site</a>
 
 ![HOME](https://user-images.githubusercontent.com/105028392/222925345-216d2d8f-37c4-45ad-a9c1-d9aa46286620.png)
 
