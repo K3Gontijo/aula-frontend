@@ -1,0 +1,48 @@
+* {
+    padding: 3px;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+nav {
+    background-color: rgb(243, 219, 187);
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: large;
+}
+
+.center {
+    text-align: center;
+}
+
+.botao {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: rgb(161, 145, 123);
+    text-decoration: none;
+    border-radius: 60px;
+}
+
+.botao:hover {
+    background-color: rgb(126, 113, 95);
+    padding: 11px;
+}
+
+.borda {
+    border: 1px solid black;
+}
