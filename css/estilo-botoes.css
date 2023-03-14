@@ -29,7 +29,7 @@ p {
     text-align: center;
 }
 
-.botao {
+.botao-comum {
     text-align: center;
     color: white;
     padding: 10px;
@@ -38,11 +38,25 @@ p {
     border-radius: 60px;
 }
 
-.botao:hover {
+.botao-comum:hover {
     background-color: rgb(126, 113, 95);
     padding: 11px;
 }
 
 .borda {
     border: 1px solid black;
+}
+
+.botao_imagem{
+    color: black;
+    background-color: cadetblue;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 10px;
+       
+}
+
+.botao_imagem:hover{
+    background-color: rgb(83, 140, 141);
+    padding: 9px;
 }
