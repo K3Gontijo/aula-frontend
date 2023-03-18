@@ -47,16 +47,48 @@ p {
     border: 1px solid black;
 }
 
-.botao_imagem{
+.botao_imagem {
     color: black;
     background-color: cadetblue;
     padding: 8px;
     text-decoration: none;
     border-radius: 10px;
-       
+
 }
 
-.botao_imagem:hover{
+.botao_imagem:hover {
     background-color: rgb(83, 140, 141);
     padding: 9px;
+}
+
+.botao_3d {
+    color: black;
+    background-color: cadetblue;
+    padding: 8px;
+    text-decoration: none;
+    box-shadow: 0 5px rgb(72, 119, 121);
+}
+
+.botao_3d:hover {
+    background-color: rgb(78, 133, 134);
+    box-shadow: 0 5px rgb(60, 101, 102);
+}
+
+.botao_active {
+    color: black;
+    background-color: cadetblue;
+    padding: 8px;
+    text-decoration: none;
+    box-shadow: 0 5px rgb(72, 119, 121);
+}
+
+.botao_active:hover {
+    background-color: rgb(78, 133, 134);
+    box-shadow: 0 5px rgb(60, 101, 102);
+}
+
+.botao_active:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
 }

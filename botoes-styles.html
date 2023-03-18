@@ -11,14 +11,17 @@
 </head>
 
 <body>
+    <!--TÍTULO-->
     <header>
         <h1 class="center">Estilos de Botões</h1>
 
+        <!--NAVEGADOR-->
         <nav class="center">
             <a href="css.html" class="botao-comum">Voltar</a>
         </nav>
     </header>
 
+    <!--CORPO-->
     <div style="background-color: white">
         <article class="borda">
             <h2>O que vamos ver?</h2>
@@ -32,19 +35,33 @@
 
         <article class="borda">
             <h2>Vamos lá</h2>
-                <p>
-                    Ícone dentro do botão: <br><br>
-                    <a href="sobre.html" class="botao_imagem">
-                        <img src="imagens/user.png" width="15px" style="margin-bottom: -3px;"> |Sobre mim
-                    </a>
-                </p>
+            <p>
+                Ícone dentro do botão: (Para adicionar uma imagem, basta adicionar a tag "img" e enderaçar a
+                imagem)<br><br>
 
-                <p>
-                    Botão 3D: <br><br>
-                </p>
+                <a href="sobre.html" class="botao_imagem">
+                    <img src="imagens/user.png" width="15px" style="margin-bottom: -3px;"> |Sobre mim
+                </a>
+
+            </p>
+
+            <p>
+                Botão 3D: (Para fazermos botões 3D, nós podemos usar a propriedade "box-shadow")<br><br>
+
+                <a href="sobre.html" class="botao_3d">Sobre mim</a>
+
+            </p>
+
+            <p>
+                Botão com ação de ativação: (Para isso nós usamos a propriedade "classe":active e definir a ação que
+                queremos depois de clicar nele)<br><br>
+
+                <button class="botao_active">Texto</button>
+            </p>
+
         </article>
     </div>
-    
+
 </body>
 
 </html>
