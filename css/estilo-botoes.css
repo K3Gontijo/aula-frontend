@@ -74,21 +74,41 @@ p {
     box-shadow: 0 5px rgb(60, 101, 102);
 }
 
+.botao_3d_2 {
+    color: rgb(255, 196, 0);
+    padding: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid rgb(255, 196, 0);
+    padding: 15px;
+
+    transition: all 0.25s ease-in-out;
+}
+
+.botao_3d_2:hover {
+    box-shadow: 16px 16px 0px rgb(255, 196, 0),
+        -16px -16px 0px;
+    border: 2px solid transparent;
+
+}
+
 .botao_active {
     color: black;
     background-color: cadetblue;
     padding: 8px;
-    text-decoration: none;
-    box-shadow: 0 5px rgb(72, 119, 121);
+    border: none;
+    padding: 10px;
+    box-shadow: -2px 3px 0px 3px rgb(72, 119, 121);
 }
 
 .botao_active:hover {
     background-color: rgb(78, 133, 134);
-    box-shadow: 0 5px rgb(60, 101, 102);
+    box-shadow: -2px 3px 0px 3px rgb(60, 101, 102);
 }
 
 .botao_active:active {
     position: relative;
+    right: 5px;
     top: 5px;
     box-shadow: none;
 }
