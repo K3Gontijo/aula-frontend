@@ -47,7 +47,8 @@ hr {
 .width_height,
 .text,
 .font,
-.estilizacao_link {
+.estilizacao_link,
+.display {
     border: 1px solid black;
 }
 
